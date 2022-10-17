@@ -1,3 +1,5 @@
+mod addition;
+
 fn main() {
-    println!("Hello, world!");
+    println!("{:?}", addition::add(5,10));
 }
