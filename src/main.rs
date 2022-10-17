@@ -2,6 +2,10 @@ mod addition;
 mod submodules;
 
 fn main() {
-    println!("{:?}", addition::add(5,10));
-    println!("{:?}", submodules::subtraction::sub(5,10));
+
+    use addition::add;
+    use submodules::subtraction::sub;
+
+    println!("{:?}", add(5,10));
+    println!("{:?}", sub(5,10));
 }
