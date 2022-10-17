@@ -3,9 +3,9 @@ mod submodules;
 
 fn main() {
 
-    use addition::add;
-    use submodules::subtraction::sub;
+    use addition::add as adder_function;
+    use submodules::subtraction::sub as my_sub;
 
-    println!("{:?}", add(5,10));
-    println!("{:?}", sub(5,10));
+    println!("{:?}", adder_function(5,10));
+    println!("{:?}", my_sub(5,10));
 }
